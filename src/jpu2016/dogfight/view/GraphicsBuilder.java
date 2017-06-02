@@ -1,8 +1,10 @@
 package jpu2016.dogfight.view;
 
-import java.awt.image.*;
+import java.awt.image.BufferedImage;
 
-public class GraphicsBuilder {
+import jpu2016.gameframe.IGraphicsBuilder;
+
+public class GraphicsBuilder implements IGraphicsBuilder{
 
 	public GraphicsBuilder(IDogfightModel dogfightModel){
 		
@@ -27,4 +29,6 @@ public class GraphicsBuilder {
 	public int getGlobalHeight(){
 		return 1;
 	}
+
+	
 }
